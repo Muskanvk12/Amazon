@@ -1,0 +1,193 @@
+.headerWrapper {
+  height: 100px;
+  width: 100%;
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:space-between; */
+  color: #fff;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hello{
+    margin-bottom: -5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #CCCCCC;
+}
+
+.helloRight{
+  color: #fafafa;
+}
+
+.headerTop {
+  height: 60%;
+  width: 100%;
+  padding: 7px 0.9%;
+  display: grid;
+  background-color: #131921;
+  grid-template-columns: 132px 162px 56% 50px 135px 86px 86px;
+  column-gap: 2.9px;
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#AmazonLogo {
+  height: 30px;
+  width: 100px;
+  margin-top: 4px;
+  margin-right: 20px;
+  position: absolute;
+}
+
+.logoInHeader span {
+  position: relative;
+  left: 50px;
+  bottom: 2px;
+  color: white;
+}
+
+.usersLocationInHeader {
+  display: flex;
+  /* background-color: pink; */
+}
+
+.locationIcon {
+  height: 100%;
+  width: 15%;
+  margin-right: -8px;
+  margin-bottom: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+.locationText {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: lavender; */
+}
+
+/* .addressText {
+  background-color: darkkhaki;
+} */
+
+.searchBar {
+  height: 87%;
+  display: grid;
+  margin: auto 10px;
+  grid-template-columns: 50px 1fr 45px;
+}
+
+.AllBtn {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  background-color: #edecec;
+  color: #5f646a;
+  border-right: 1px solid gray;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.searchInput {
+  height: 100%;
+}
+
+#search {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.searchBtn {
+  height: 100%;
+  background-color: #edae5a;
+  color: rgb(58, 58, 58);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.regionInHeader {
+  display: flex;
+  justify-content: center;
+  background-color: #131921;
+}
+
+.Flag{
+    margin-top: 10px;
+}
+
+.flagImg{
+    height: 15px;
+    width: 21px;
+    background-color: white;
+}
+
+.downArrow {
+    margin-left: -4px;
+  align-self: flex-end;
+  color: #5f6469;
+}
+
+.accountSignInInHeader {
+  display: flex;
+  justify-content: center;
+  background-color: #131921;
+}
+
+.locationText{
+    margin-left: 8px;
+}
+
+.usersOrdersInHeader {
+  background-color: #131921;
+}
+
+.cartInHeader {
+    display: flex;
+  background-color: #131921;
+}
+
+.notifier{
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    color: #F3A847;
+}
+
+.cartInHeader span{
+    margin-top: 10px;
+}
+
+.onHover:hover {
+  outline: 1.5px solid rgb(255, 255, 255);
+  outline-offset: 1px;
+  border-radius: 1px;
+}
+
+.AllBtn:hover{
+    background-color:#DADADA;
+    color: #131921;
+}
+
+.searchBtn:hover{
+    background-color: #F3A847;
+}

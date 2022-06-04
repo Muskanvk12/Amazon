@@ -1,0 +1,43 @@
+.subheader{
+    height: 39%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232F3E;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.subheaderLeft{
+    width: 70%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subheaderRight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subheaderProducts{
+    padding: 3px 7.8px; 
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.subheaderMenu{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.subheaderProducts:hover{
+    outline: 1px solid rgb(255, 255, 255);
+    border-radius: 1px;
+    outline-offset: 1px;
+}
