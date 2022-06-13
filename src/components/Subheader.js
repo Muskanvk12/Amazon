@@ -9,7 +9,7 @@ const Subheader = () => {
             <div className="subheaderLeft">
                 <div className="subheaderProducts subheaderMenu"><MenuIcon/><p>All</p></div>
                 <Link to="/content" className="subheaderProducts">Headphones</Link>
-                <div className="subheaderProducts">Mobiles</div>
+                <Link to="/mobile" className="subheaderProducts">Mobiles</Link>
                 <div className="subheaderProducts">Women's Fashion</div>
                 <div className="subheaderProducts">Home & Kitchen</div>
                 <div className="subheaderProducts">Computers</div>

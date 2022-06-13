@@ -1,0 +1,16 @@
+.productCard2 {
+    height: 569px;
+    width: 308px;
+    /* margin: 8px 0px; */
+    /* min-width: 786px; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(243, 243, 243);
+    background-color: white;
+    color: #0f1111;
+    font-family: "Roboto", sans-serif;
+  }
+
+.productImage{
+    max-height: 292px;
+}

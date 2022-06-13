@@ -133,6 +133,19 @@ box-shadow: inset 0px 0px 60px -19px rgb(234, 234, 234);
   font-weight: 700;
 }
 
+.addToCartBtn{
+  margin-top: 6px;
+}
+
+.addToCartBtn button{
+  height: 1.5rem;
+  width: 5.5rem;
+  background-color: #ffac38;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .productName:hover {
   color: #cf7733;
 }

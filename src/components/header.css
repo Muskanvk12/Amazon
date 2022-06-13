@@ -1,3 +1,8 @@
+header{
+  height: 100%;
+  position: relative;
+}
+
 .headerWrapper {
   height: 100px;
   width: 100%;
@@ -31,12 +36,15 @@
   background-color: #131921;
   grid-template-columns: 132px 162px 56% 50px 135px 86px 86px;
   column-gap: 2.9px;
+  position: sticky;
+  top: 0px;
 }
 
 .centerContent {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 #AmazonLogo {

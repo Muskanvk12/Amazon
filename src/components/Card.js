@@ -1,14 +1,15 @@
 import './productCard.css'
+import './card.css'
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import prime from '../Data/primepng.png'
 
-export default function ProductCard(details) {
+export default function Card(details) {
     console.log(details)
     return (
-        <div className='productCard'>
+        <div className='productCard productCard2'>
             <div className='productImg'>
                 <img className='productImage' src={`${details.details.image}`} alt="Headphone" />
             </div>
@@ -32,9 +33,6 @@ export default function ProductCard(details) {
                 <div className="productDelivery">
                     <span className='deliveryDateWrapper'><img className='primeImg' src= {prime} alt="" /><p>Get it by <span className='deliveryDate'>{details.details.deliveryDate}</span></p></span>
                     <p>{details.details.deliveryRate}</p>
-                </div>
-                <div className="addToCartBtn">
-                    <button>Add to Cart</button>
                 </div>
             </div>
         </div>
