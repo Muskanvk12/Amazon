@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cartComponentWrapper{
+    width: 100%;
+    display: flex;
+    padding: 1.7rem 1.1rem;
+    background-color: #EAEDED;
+    font-family: "Roboto", sans-serif;
+}
+
+.cartWrapper{
+    width: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.emptyCartHeading{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+}
+
+.emptyCartHeadingDesc{
+    font-size: 15px;
+}
+
+.priceHeading{
+    margin-bottom: 2px;
+    font-size: 14px;
+    position:relative;
+    left: 95%;
+}

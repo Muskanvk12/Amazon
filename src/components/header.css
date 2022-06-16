@@ -1,4 +1,4 @@
-header{
+header {
   height: 100%;
   position: relative;
 }
@@ -11,20 +11,20 @@ header{
   flex-direction: column;
   /* justify-content:space-between; */
   color: #fff;
-  font-family: 'Mukta', sans-serif;
-  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 
-.hello{
-    margin-bottom: -5px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: #CCCCCC;
+.hello {
+  margin-bottom: -5px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #cccccc;
 }
 
-.helloRight{
+.helloRight {
   color: #fafafa;
 }
 
@@ -134,18 +134,18 @@ header{
   background-color: #131921;
 }
 
-.Flag{
-    margin-top: 10px;
+.Flag {
+  margin-top: 10px;
 }
 
-.flagImg{
-    height: 15px;
-    width: 21px;
-    background-color: white;
+.flagImg {
+  height: 15px;
+  width: 21px;
+  background-color: white;
 }
 
 .downArrow {
-    margin-left: -4px;
+  margin-left: -4px;
   align-self: flex-end;
   color: #5f6469;
 }
@@ -156,8 +156,8 @@ header{
   background-color: #131921;
 }
 
-.locationText{
-    margin-left: 8px;
+.locationText {
+  margin-left: 8px;
 }
 
 .usersOrdersInHeader {
@@ -165,24 +165,27 @@ header{
 }
 
 .cartInHeader {
-    display: flex;
+  display: flex;
   background-color: #131921;
+  color: white;
+  text-decoration: none;
 }
 
-.notifier{
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -5px;
-    color: #F3A847;
+.notifier {
+  height: 18px;
+  width: 18px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  color: #f3a847;
+  font-size: 19px;
 }
 
-.cartInHeader span{
-    margin-top: 10px;
+.cartInHeader span {
+  margin-top: 10px;
 }
 
 .onHover:hover {
@@ -191,11 +194,11 @@ header{
   border-radius: 1px;
 }
 
-.AllBtn:hover{
-    background-color:#DADADA;
-    color: #131921;
+.AllBtn:hover {
+  background-color: #dadada;
+  color: #131921;
 }
 
-.searchBtn:hover{
-    background-color: #F3A847;
+.searchBtn:hover {
+  background-color: #f3a847;
 }

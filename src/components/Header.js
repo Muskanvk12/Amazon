@@ -47,7 +47,7 @@ function Header(info) {
                         <div className='addressText'>& Orders</div>
                     </div>
                 </div>
-                <div className='onHover centerContent cartInHeader'><ShoppingCartOutlinedIcon style={{fontSize: '250%'}}/> <span className='notifier'>0</span> <span>Cart</span></div>
+                <Link className='onHover centerContent cartInHeader' to='/cart'><ShoppingCartOutlinedIcon style={{fontSize: '250%'}}/> <span className='notifier'>{info.info.cartLength}</span> <span>Cart</span></Link>
             </div>
             <Subheader info = {info}/>
         </header>
