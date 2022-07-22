@@ -3,18 +3,16 @@ import { Link } from 'react-router-dom';
 import './header.css'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import Subheader from './Subheader';
 function Header(info) {
     return (
         <header className='headerWrapper'>
             <div className="headerTop">
                 <Link to="/" className='onHover centerContent logoInHeader'>
-                  <img id='AmazonLogo' src="/amazonLogo.png" alt="Amazon" /><span>.in</span>
+                  <img id='AmazonLogo' src="/Images/Icons/amazonLogo.png" alt="Amazon" /><span>.in</span>
                 </Link>
                 <div className='onHover centerContent usersLocationInHeader'>
-                    <div className='locationIcon'><FmdGoodOutlinedIcon style={{fontSize: '120%'}}/></div>
+                    <div className='locationIcon'><img className='amazonLocationInHeaderImg' src="/Images/Icons/amazonLocationInHeader.png" alt=">" /></div>
                     <div className='locationText'>
                         <div className='hello'>Deliver to {info.info.name}</div>
                         <div className='addressText'>{info.info.city} {info.info.pincode}</div>
@@ -47,7 +45,7 @@ function Header(info) {
                         <div className='addressText'>& Orders</div>
                     </div>
                 </div>
-                <Link className='onHover centerContent cartInHeader' to='/cart'><ShoppingCartOutlinedIcon style={{fontSize: '250%'}}/> <span className='notifier'>{info.info.cartLength}</span> <span>Cart</span></Link>
+                <Link className='onHover centerContent cartInHeader' to='/cart'><img className='amazonCartInHeaderImg' src="/Images/Icons/AmazonCartInHeader.png" alt="" /><span className='notifier'>{info.info.cartLength}</span> <span>Cart</span></Link>
             </div>
             <Subheader info = {info}/>
         </header>

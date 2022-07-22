@@ -1,9 +1,10 @@
 import React from 'react';
+import SignIn from './SignIn';
 
 const Home = () => {
     return (
         <div className='homeWrapper'>
-            Home
+            <SignIn/>
         </div>
     );
 }

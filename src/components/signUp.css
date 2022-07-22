@@ -1,0 +1,77 @@
+.signUpMain{
+    height: 582px;
+}
+
+.signUpBox{
+    height: 559px;
+}
+
+.inputWrapper{
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signInEmail{
+    margin-bottom: 3px;
+}
+
+.signUpInput{
+    height: 31px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    border: 1px solid #9a9a9a;
+    outline: none;
+}
+
+.mobileNumber{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUpMobileNumberBtn{
+    height: 31px;
+    width: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.TopDownIcons{
+    margin: 0px -6px 0px 5px;
+}
+
+.signUpMobileInput{
+    width: 70%;
+}
+
+.passwordGuide{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.msgInstruction{
+    font-weight: 500;
+}
+
+.iIconImg{
+    margin-right: 2px;
+}
+
+.signUpContinuebtn{
+    border: 1px solid #846A29;
+    border-radius: 3px;
+}
+
+.forShadowEffectInSignUp{
+    top: 99.8vh;
+    border-radius: 30%;
+    z-index: 0;
+}
+
+.forShadowEffectInSignUp2{
+    top: 97.3vh;
+}
+

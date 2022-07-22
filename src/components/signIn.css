@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.blueText{
+    color: #0066c0 !important;
+}
+
+.signUpWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.signInHeader, .signInMain, .signInFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signInHeader span{
+    position: absolute;
+    top: 17px;
+}
+
+#signInAmazonLogo{
+    height: 40px;
+    margin: 11px 0px;
+}
+
+.signInMain{
+    height: 385px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.signInBox{
+    height: 279px;
+    width: 348px;
+    margin-bottom: 20px;
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    line-height: 17px;
+}
+
+.signInHeading{
+    font-size: 29px;
+    margin-bottom: 20px;
+    font-family: "PT sans";
+    font-weight: 400;
+}
+
+.signInEmail{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#signInEmail{
+    height: 31px;
+    border-radius: 4px;
+    border: 1px solid #9a9a9a;
+    outline: none;
+}
+
+.signInContinuebtn{
+    height: 29px;
+    width: 100%;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    margin: 15px 0px;
+    font-size: 13px;
+}
+
+.signInContinueBtnInp{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+
+.signInPrivacyPolicy{
+    font-size: 12px;
+}
+
+.signInNeedHelp{
+    height: 46px;
+    display: flex;
+    align-items: flex-end;
+   font-size: 13px;
+   font-weight: 500;
+}
+
+.signInNeedHelp Img{
+    margin-right: 5px;
+}
+
+.signInNewUserHeading{
+    display: flex;
+    align-items: center;
+}
+
+.signInNewUserHeading p{
+    margin: 0px 10px;
+    color: #696767;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.signInHorizontalLines{
+    height: 1px;
+    width: 108px;
+    background-color: #DDDDDD;
+}
+
+.signInCreateAccountBtn{
+    height: 29px;
+    width: 348px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.signInFooter{
+    margin-top: 1.5rem;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.signInFooter nav{
+    width: 70%;
+}
+
+.footerNavUl{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footerNavLinks{
+    margin: 0px 10px;
+    color: #0066c0;
+}
+
+.signInFooterCopyrigth{
+    color: #5d5b5b;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.forShadowEffectInSignIn{
+    height: 12px;
+    width: 100%;
+    position: absolute;
+    top: 72.54vh;
+    background-color: #E7E7E7;
+    border-radius: 40%;
+    z-index: 0;
+}
+
+.forShadowEffectInSignIn2{
+    height: 30px;
+    width: 40%;
+    background-color: #0066c0;
+    border-radius: 50%;
+    position: absolute;
+    top: 69.5vh;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(12, 12, 22, 0.071) 0px 8px 32px;
+    z-index: -1;
+}
+
+.signUpInput:focus { 
+    outline: none !important;
+    border-color: #E77600 !important;
+    box-shadow: 0 0 10px #E77600;
+}

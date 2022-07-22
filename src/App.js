@@ -6,6 +6,8 @@ import Mobile from './components/Mobile';
 import Header from './components/Header';
 import Home from './components/Home';
 import Cart from './components/Cart';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 import Data from './Data/productsData'
 import inEarBluetooth from './Data/headphoneInEar'
 // import Login from './components/Login';
@@ -49,7 +51,7 @@ function App() {
       <BrowserRouter>
       <Header info = {{name, city, pincode, cartLength}}/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<SignUp/>}/>
           <Route path='/content' element={<Content/>}/>
           <Route path='/mobile' element={<Mobile data = {{Data, addToCart}}/>}/>
           <Route path='/cart' element={<Cart cartData = {{cart, addToCart, removeFromCart, decrement}}/>}/>
