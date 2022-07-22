@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './signIn.css'
 
 const SignIn = () => {
+    let navigate = useNavigate();
     return (
         <div className='signUpWrapper'>
             <header className='signInHeader'>
@@ -17,7 +19,7 @@ const SignIn = () => {
                         <div className="signInNeedHelp"><a href='Amazon.in' className='learnMore blueText'><img src="/images/Icons/amazonArroRight.png" alt="" /> Need help?</a></div>
                     </div>
                     <div className="signInNewUserHeading"><div className="signInHorizontalLines"></div><p>New to Amazon?</p><div className="signInHorizontalLines"></div></div>
-                    <div className="signInCreateAccountBtn">Create your Amazon account</div>
+                    <div className="signInCreateAccountBtn" onClick={()=>{navigate("/register")}}>Create your Amazon account</div>
             </main>
             <div className="forShadowEffectInSignIn"></div>
             <div className="forShadowEffectInSignIn2"></div>

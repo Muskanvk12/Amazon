@@ -51,7 +51,9 @@ function App() {
       <BrowserRouter>
       <Header info = {{name, city, pincode, cartLength}}/>
         <Routes>
-          <Route path='/' element={<SignUp/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/register' element={<SignUp/>}/>
+          <Route path='/login' element={<SignIn/>}/>
           <Route path='/content' element={<Content/>}/>
           <Route path='/mobile' element={<Mobile data = {{Data, addToCart}}/>}/>
           <Route path='/cart' element={<Cart cartData = {{cart, addToCart, removeFromCart, decrement}}/>}/>

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import './cart.css'
 import CartCard from './CartCard'
 import FilterBar from './FilterBar'
+import Header from './Header'
 
 export default function Cart({cartData}){
     let cartLengthInCart = cartData.cart.length

@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 import './signIn.css'
 import './signUp.css'
 
 const SignUp = () => {
+    let navigate = useNavigate();
     const [signUpInp, setsignUpInp] = useState({"name" : "", "number" : "", "email" : "", "password" : ""})
     function handleChange(e){
         if(e.target.name === "signUpName"){
@@ -39,6 +41,7 @@ const SignUp = () => {
         }
         else{
             registerUser()
+            navigate('/login')
         }
     }
     return (
@@ -76,7 +79,7 @@ const SignUp = () => {
                     </div>
                     <div className='signUpContinuebtn signInContinuebtn'><input type="button" name="continue" id="continue" className='signInContinueBtnInp' value='Continue' onClick={handleSubmit}/></div>
 
-                    <div className="signInPrivacyPolicy">Already have an account? <a href='Amazon.in' className='learnMore blueText'>Sign in</a> <br />Buying for work? <a href='Amazon.in' className='learnMore blueText'>Create a fre business account</a></div>
+                    <div className="signInPrivacyPolicy">Already have an account? <a className='learnMore blueText' onClick={()=>{navigate('/login')}}>Sign in</a> <br />Buying for work? <a href='Amazon.in' className='learnMore blueText'>Create a fre business account</a></div>
                 </div>
             </main>
             <div className="forShadowEffectInSignUp forShadowEffectInSignIn"></div>
