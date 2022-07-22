@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import axios from 'axios'
 import './signIn.css'
 import './signUp.css'
 
 const SignUp = () => {
-    const [signUpInp, setsignUpInp] = useState({})
+    const [signUpInp, setsignUpInp] = useState({"name" : "", "number" : "", "email" : "", "password" : ""})
     function handleChange(e){
         if(e.target.name === "signUpName"){
             setsignUpInp({...signUpInp, "name" : e.target.value})
@@ -19,8 +20,26 @@ const SignUp = () => {
         }
     }
 
+    async function registerUser(){
+        const response = await axios.post('http://localhost:5000/register/user', {
+            ...signUpInp
+        }) 
+        if(response.data.message==="exists"){
+            alert("user with this number or email already exists")
+        }
+        else{
+            alert("user registered")
+        }
+        
+    }
+
     function handleSubmit(){
-        console.log(signUpInp)
+        if(signUpInp.name === "" || signUpInp.number === "" || signUpInp.password === "")        {
+            alert("Important fields cannot be blank")
+        }
+        else{
+            registerUser()
+        }
     }
     return (
         <div className='signUpWrapper'>
