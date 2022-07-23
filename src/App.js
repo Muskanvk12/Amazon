@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import SignIn from './components/SignIn';
+import SignInAuth from './components/SignInAuth';
 import SignUp from './components/SignUp';
 import Data from './Data/productsData'
 import inEarBluetooth from './Data/headphoneInEar'
@@ -54,6 +55,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/register' element={<SignUp/>}/>
           <Route path='/login' element={<SignIn/>}/>
+          <Route path='/loginauth' element={<SignInAuth/>}/>
           <Route path='/content' element={<Content/>}/>
           <Route path='/mobile' element={<Mobile data = {{Data, addToCart}}/>}/>
           <Route path='/cart' element={<Cart cartData = {{cart, addToCart, removeFromCart, decrement}}/>}/>
